@@ -11,17 +11,20 @@ import com.test.myapp4.entity.Employee;
 
 @RestController
 public class EmployeeController {
-    private ArrayList al;
-
+    private ArrayList<Employee> al;
+    
     public EmployeeController(){
         al = new ArrayList<>();
         Employee emp1 = new Employee();
         emp1.setName("홍길동");
         al.add(emp1);
+        Employee emp2 = new Employee();
+        emp2.setName("강감찬");
+        al.add(emp2);
     }
-
+    
     @GetMapping("/employees")
-    public List<Employee> getEmployeeAll(){
+    public List<Employee> getEmployeeAll() {
         return al;
     }
 }
