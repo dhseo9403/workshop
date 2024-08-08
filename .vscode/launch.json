@@ -5,7 +5,8 @@
             "name": "SpringbootappApplication",
             "request": "launch",
             "mainClass": "com.test.springbootapp.SpringbootappApplication",
-            "projectName": "springbootapp"
+            "projectName": "springbootapp",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=41805 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springbootapp"
         },
         {
             "type": "java",
@@ -14,6 +15,36 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.test.springboot.SpringbootApplication",
             "projectName": "springboot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Myapp5Application<myapp5>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.myapp5.Myapp5Application",
+            "projectName": "myapp5",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Myapp6Application<myapp6>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.myapp6.Myapp6Application",
+            "projectName": "myapp6",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Myapp7Application<myapp7>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.myapp7.Myapp7Application",
+            "projectName": "myapp7",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
